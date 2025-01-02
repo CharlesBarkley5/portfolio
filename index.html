@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Nick Diaz</title>
+  </head>
+  <body class="dark">
+    &nbsp;
+    <div class="fixed dark">
+      <div class="header">
+        <h2>Nick Diaz</h2>
+        <input type="radio" name="slider" id="home" checked />
+        <input type="radio" name="slider" id="about"/>
+        <input type="radio" name="slider" id="skills" />
+        <input type="radio" name="slider" id="projects" />
+        <input type="radio" name="slider" id="work" />
+        <input type="radio" name="slider" id="education" />
+        <nav>
+          <div class="slider"></div>
+          <label for="home" onClick="scroll_func('home-section')"> Home </label></a>
+          <label for="about" onClick="scroll_func('about-section')"> About </label>
+          <label for="skills" onClick="scroll_func('skills-section')"> Skills </label>
+          <label for="projects" onClick="scroll_func('projects-section')"> Projects </label>
+          <label for="work" onClick="scroll_func('work-section')"> Work </label>
+          <label for="education" onClick="scroll_func('education-section')"> Education </label>
+        </nav>
+      </div>
+      &nbsp;
+      <hr />
+    </div>
+    <div id="home-section">
+      <h1 class="beginning main fade-marker">
+        Hi, I'm Nick. I am learning software development.
+      </h1>
+      <h3 class="beginning subheader fade-marker">Here are my links:</h3>
+      <div class="beginning links fade-marker">
+        <a href="https://github.com/CharlesBarkley5" class="github-icon-1"
+          ><i class="fa-brands fa-github fa-xl"></i
+        ></a>
+        &nbsp;
+        <a
+          href="https://www.linkedin.com/in/nick-diaz-4058a324b/"
+          class="linkedin-icon"
+          ><i class="fa-brands fa-linkedin-in fa-xl linkedin-icon"></i
+        ></a>
+        &nbsp;
+        <a href="mailto:nickc7489@gmail.com" class="mail-icon"
+          ><i class="fa-regular fa-envelope mail-icon"></i
+        ></a>
+        &nbsp;
+        <a href="media/My Resume.pdf" target="_blank" class="resume">Resume</a>
+      </div>
+    </div>
+    <div id="about-section" class="section">
+      <h1 class="section-header fade-marker">About Me</h1>
+      <hr />
+        <h3 class="fade-marker">My name is Nick Diaz and I'm a Computer Science student at the University of Maryland, College Park. </h3>
+        <h3 class="fade-marker">I mainly specialize in web development, but I am also interested in machine learning and data science. </h3>
+        <h3 class="fade-marker">I'm just trying to learn as many things as I can so far, in and out of school. </h3>
+        &nbsp;
+        <h3 class="fade-marker">↓ Check out the <a href="#skills-section">skills</a> I've picked up below! ↓</h3>
+    </div>
+    <div id="skills-section" class="section">
+      <h1 class="section-header fade-marker">Skills</h1>
+      <hr />
+      <h4 class="flex-line fade-marker">Languages: &nbsp;<div class="tag red">Python</div><div class="tag red">Javascript</div><div class="tag red">Java</div><div class="tag red">C</div><div class="tag red">MIPS Assembly</div><div class="tag red">SQL</div></h4>
+      <h4 class="flex-line fade-marker">Web Dev: &nbsp;<div class="tag orange">React.js</div><div class="tag orange">Angular.js</div><div class="tag orange">Django</div><div class="tag orange">Express.js</div><div class="tag orange">Spring Boot</div><div class="tag orange">MongoDB</div></h4>
+      <h4 class="flex-line fade-marker">DevOps: &nbsp;<div class="tag green">AWS</div><div class="tag green">Docker</div><div class="tag green">Github</div><div class="tag green">Heroku</div></h4>
+      <h4 class="flex-line fade-marker">Data Science / ML (still learning): &nbsp;<div class="tag blue">Pandas</div><div class="tag blue">NumPy</div><div class="tag blue">Tensorflow</div><div class="tag blue">sklearn</div></h4>
+    </div>
+    <div id="projects-section" class="section">
+      <h1 class="section-header fade-marker">Projects</h1>
+      <hr />
+      <div class="project">
+        <img src="media/Portfolio.png" />
+        <div class="container dark">
+          <div class="flex-line"><h3>This Site</h3><div class="right"><a href="https://nick-diaz-portfolio.netlify.app/"><i class="fa-solid fa-link link-icon"></i></a><a href="https://github.com/CharlesBarkley5/Portfolio"><i class="fa-brands fa-github fa-xl github-icon-2"></i></a></div></div>
+          <div class="flex-line"><p>I built this portfolio site with vanilla Javascript, HTML, and CSS.</p></div>
+        </div>
+      </div>
+      <div class="project">
+        <img src="media/CustomQuizSite.png" />
+        <div class="container dark">
+          <div class="flex-line"><h3>Custom Quiz Site (link inactive currently)</h3><div class="right"><a href="https://custom-quiz-site.herokuapp.com/"><i class="fa-solid fa-link link-icon"></i></a><a href="https://github.com/CharlesBarkley5/Custom-Quiz-Website"><i class="fa-brands fa-github fa-xl github-icon-2"></i></a></div></div>
+          <div class="flex-line"><p>Website where you can create and post custom quizzes with multiple choice and free response questions. Front end made with React.js and back end made with Django REST framework.</p></div>
+        </div>
+      </div>  
+      <div class="project">
+        <img src="media/ArtPortfolio.png" />
+        <div class="container dark">
+          <div class="flex-line"><h3>Art Portfolio</h3><div class="right"><a href="https://minmonportfolio.netlify.app/"><i class="fa-solid fa-link link-icon"></i></a><a href="https://github.com/nickc7489/art-portfolio"><i class="fa-brands fa-github fa-xl github-icon-2"></i></a></div></div>
+          <div class="flex-line"><p>Web art porfolio for my friend, made with React.js.</p></div>
+        </div>
+      </div>   
+      <div class="project">
+        <img src="media/Sklearn&Tensorflow.png" />
+        <div class="container dark">
+          <div class="flex-line"><h3>Weather Prediction Neural Network</h3><div class="right"><a href="https://colab.research.google.com/drive/1XbVzuJBXEV5pb6jK6ee4YbzUPgpOwPOp"><i class="fa-solid fa-link link-icon"></i></a><a href="https://github.com/CharlesBarkley5/Weather-Prediction-Neural-Network"><i class="fa-brands fa-github fa-xl github-icon-2"></i></a></div></div>
+          <div class="flex-line"><p>Final Project I created for UMD's BigThink AI club. Takes in historical Seattle weather data from a CSV file and predicts, based on the data from a given day, whether or not it rained on that day. Created with Python machine learning libraries Sklearn and Tensorflow's Keras API, along with data science libraries Pandas and NumPy.</p></div>
+        </div>
+      </div>  
+      <div class="project">
+        <img src="media/Discord.png" />
+        <div class="container dark">
+          <div class="flex-line"><h3>Soundboard Discord Bot</h3><div class="right"><a href="https://github.com/CharlesBarkley5/Soundboard-Bot"><i class="fa-brands fa-github fa-xl github-icon-2"></i></a></div></div>
+          <div class="flex-line"><p>Soundboard bot for Discord made with the Dicord.py library. Sends a message in chat where users can click emojis that correspond to certain sounds that the bot plays in voice chat.</p></div>
+        </div>
+      </div>     
+    </div>
+    <div id="work-section" class="section">
+      <h1 class="section-header fade-marker">Work</h1>
+      <hr />
+        <div class="center"><img src="media/TwinbrookDucks.jpg"><img src="media/Django.png"></div>
+        <div class="center"><h3><br>Over summer 2022 I worked as a backend programmer for my local pool using Django. I had to update the pool's Django system to its latest long term support version as well as create actions in the system's interface that allowed workers to enter data about guests and entries quicker.</div>
+        <br><br />
+        <div class="center"><img src="media/Hughes.png"></div>
+        <div class="center"><h3><br>From May 2023 to now, I've worked at Hughes Network Systems as an intern. My first project was to create Python programs to run on Cradlepoint routers and report their metrics via MQTT. Currently, I am working on an SMS chat bot to help customers install tech using Javascript and Twilio.</h3></div>
+    </div>
+    <div id="education-section" class="section">
+      <h1 class="section-header fade-marker">Education</h1>
+      <hr />
+      <div class="center" style="margin-bottom: 30rem">
+        <div style="margin: 15%; margin-left: 37.5rem"><img src="media/RMHS.gif"><br><div class="center"><h3>2018-2022</h3></div></div>
+        <div style="margin: 15%"><img src="media/UMD.png"><br><div class="center"><h3>2022-2025</h3></div></div>
+      </div>
+    </div>
+    <script src="./appear-animation.js"></script>
+    <script src="./navigation.js"></script>
+    <script src="./app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/cffc256582.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

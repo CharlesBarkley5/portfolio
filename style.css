@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-left: 7%;
+}
+
+h3,
+h4 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-left: 1.5px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rem;
+  position: relative;
+}
+
+nav label {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+  width: 6rem;
+  height: 100%;
+  line-height: 60px;
+  border-radius: 0.2rem;
+  text-align: center;
+  transition: all 0.3 ease;
+  z-index: 1;
+}
+
+nav label a {
+  text-decoration: none;
+}
+
+#home-section,
+#about-section,
+#skills-section,
+#work-section,
+#education-section {
+  scroll-margin-top: 18rem;
+}
+
+#about-section hr {
+  width: 11.25rem;
+}
+
+#skills-section hr {
+  width: 5.9rem;
+}
+
+#projects-section hr {
+  width: 9.3rem;
+  margin-bottom: 4rem;
+}
+
+#projects-section {
+  scroll-margin-top: 8rem;
+} 
+
+#work-section hr {
+  width: 6.45rem;
+}
+
+#work-section img {
+  height: 200px;
+  margin: 2%;
+}
+
+#work-section div {
+  margin-right: 15%;
+}
+
+#work-section h3 {
+  font-size: 24px;
+}
+
+#work-section, #education-section {
+  scroll-margin-top: 14rem;
+}
+
+#education-section {
+  width: 11.3rem;
+} 
+
+#education-section img {
+  width: 350px
+} 
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  margin-top: -1.5rem;
+}
+
+.fixed hr {
+  position: fixed;
+  width: 100%;
+  margin-top: -0.5rem;
+}
+
+.space {
+  height: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  top: 0;
+}
+
+.header input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  height: 100%;
+  width: 7rem;
+  background-color: red;
+  left: 0;
+  top: 0;
+  border-radius: 0.5rem;
+  transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    background-color 0.5s ease-in;
+}
+
+#home:checked ~ nav .slider {
+  background-color: red;
+}
+
+#about:checked ~ nav .slider {
+  left: 7rem;
+  background-color: #ff7417;
+}
+#skills:checked ~ nav .slider {
+  left: 14rem;
+  background-color: #009900;
+}
+#projects:checked ~ nav .slider {
+  left: 21rem;
+  background-color: #0000ff;
+}
+#work:checked ~ nav .slider {
+  left: 28rem;
+  background-color: #7f00ff;
+}
+#education:checked ~ nav .slider {
+  left: 35rem;
+  background-color: #ff00ff;
+}
+
+.dark {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.dark a {
+  color: white;
+}
+
+.dark h3 {
+  color: RGB(215, 215, 215);
+}
+
+.beginning {
+  margin-left: 15%;
+}
+
+.beginning.main {
+  margin-top: 14%;
+}
+
+.beginning.subheader {
+  margin-top: 0.5%;
+}
+
+.beginning.links {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 1.5rem;
+  font-size: 2.8rem;
+}
+
+.github-icon-1 {
+  margin-top: -2px;
+  margin-right: 1rem;
+}
+
+.github-icon-1:hover {
+  scale: 1.12;
+  transition: all 0.2s ease;
+}
+
+.github-icon-2 {
+  margin: 10px;
+  scale: 1.5;
+}
+
+.github-icon-2:hover {
+  scale: 1.7;
+  transition: all 0.2s ease;
+}
+
+.linkedin-icon {
+  scale: 1.03;
+  margin-right: 0.75rem;
+}
+
+.linkedin-icon:hover {
+  scale: 1.09;
+  transition: all 0.2s ease;
+}
+
+.mail-icon {
+  margin-top: 0.5%;
+  scale: 1.12;
+  margin-right: 0.75rem;
+}
+
+.mail-icon:hover {
+  scale: 1.18;
+  transition: all 0.2s ease;
+}
+
+.link-icon {
+  scale: 1.65;
+  margin: 10px;
+}
+
+.link-icon:hover {
+  scale: 1.87;
+  transition: all 0.2s ease;
+}
+
+.resume {
+  margin-top: 0.2%;
+  font-size: 2.25rem;
+  margin-left: -0.3rem;
+}
+
+.resume:hover {
+  scale: 1.08;
+  transition: all 0.2s ease;
+}
+
+.section {
+  margin-left: 15%;
+  margin-top: 25%;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+}
+
+.section hr {
+  margin-bottom: 1rem;
+}
+
+.flex-line {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.tag.red {
+  background-color: red;
+}
+
+.tag.orange {
+  background-color: #ff7417;
+}
+
+.tag.green {
+  background-color: #009900;
+}
+
+.tag.blue {
+  background-color: #0000ff;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15%;
+  margin-bottom: 15%;
+}
+
+.project img {
+  width: 50rem;
+}
+
+.container {
+  width: 50rem;
+  padding: 0.75rem;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.container.dark{
+  border-color: RGB(75, 75, 75);
+}
+
+.fade-animation {
+  animation: fade-in 0.5s;
+}
+
+.right {
+  margin-left: auto;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
